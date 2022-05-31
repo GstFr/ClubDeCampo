@@ -1,0 +1,900 @@
+$ColorVerde: rgba(24, 90, 90, 0.674);
+$Verdoso: rgb(20, 60, 2);
+
+
+* {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    list-style: none;
+}
+
+html {
+    height: 100%;
+}
+
+.Contenedor {
+    background-color: $ColorVerde;
+    text-align: center;
+    font-family: Inconsolata;
+
+    display: grid;
+    grid-template-areas: "cabecera"
+        "navegador"
+        "cuerpo"
+        "pie";
+
+
+}
+
+.Cabecera {
+    grid-area: cabecera;
+    background-image: url(../repositorio/imagenes/fondo.jpeg);
+    background-size: cover;
+    height: 450px;
+
+
+    padding: 30px;
+
+    h1 {
+        font-size: 5rem;
+        padding: 10px;
+        margin: 20px;
+        color:rgba(19, 46, 128, 0.841) ;
+    }
+
+    h2 {
+        font-size: 2rem;
+        padding: 10px;
+        margin: 20px;
+        color: $Verdoso;
+    }
+
+
+}
+
+
+#logo {
+    animation-name: LogoLate;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-play-state: running
+}
+
+@keyframes LogoLate {
+    0% {
+
+        transform: scale(.2);
+        background-color: rgb(97, 10, 10);
+        border: #000000;
+        border-radius: 100%;
+
+    }
+}
+
+
+.Cuerpo {
+    display: grid;
+    margin: 40px;
+    padding: 20px;
+}
+
+.CuerpoIndex {
+    grid-area: cuerpo;
+    @extend .Cuerpo;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    justify-content: space-around;
+    justify-items: center;
+
+    div {
+        margin: 2opx;
+        padding: 20px;
+
+    }
+}
+
+
+
+.CuerpoContacto {
+    grid-area: cuerpo;
+    @extend .Cuerpo;
+    height: 500px;
+    justify-items: center;
+
+    h2 {
+        font-size: 2rem;
+    }
+
+}
+
+
+
+.CuerpoTerneros {
+    grid-area: cuerpo;
+    @extend .Cuerpo;
+    width: 90%;
+    height: 800px;
+    text-align: center;
+    justify-items: center;
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+
+
+.CuerpoTernerosLista {
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    div {
+        img {
+            margin: 10px;
+            padding: 5px;
+        }
+    }
+}
+
+
+.CuerpoTernerosTabla {
+    border: 4px solid black;
+    padding: 5px;
+    margin: 10px;
+    width: 80%;
+    height: 90%;
+    font-size: 2rem;
+
+}
+
+
+.CuerpoToros {
+    grid-area: cuerpo;
+    @extend .Cuerpo;
+    width: 70%;
+    height: 1400px;
+    text-align: center;
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+
+
+.CuerpoTorosLista {
+
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    div {
+        margin: 5px;
+        padding: 5px;
+
+        img {
+            margin: 5px;
+            padding: 5px;
+        }
+    }
+}
+
+
+
+
+.CuerpoPedidos {
+
+    grid-area: cuerpo;
+    margin: 20px;
+    padding: 10px;
+    height: 1500px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-around;
+    align-content: stretch;
+    font-size: 1.5rem;
+
+    h2 {
+        font-size: 3rem;
+
+    }
+}
+
+
+
+.PrimerRenglon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+
+}
+
+
+.SemillasCampeones {
+    margin: 10px;
+    padding: 10px;
+
+    ul {
+        margin: 10px;
+        padding: 10px;
+
+        li {
+            margin: 10px;
+            padding: 10px;
+
+            input {
+                transition: 1s;
+
+                &:checked {
+                    transform: scale(2);
+
+                }
+
+                &:focus {
+                    transform: scale(2);
+                }
+            }
+
+            label {
+                margin: 10px;
+                padding: 10px;
+            }
+        }
+
+    }
+}
+
+
+
+.TorosVenta {
+    margin: 10px;
+    padding: 10px;
+
+    ul {
+        margin: 10px;
+        padding: 10px;
+
+        li {
+            margin: 10px;
+            padding: 10px;
+
+            input {
+                transition: 1s;
+
+                &:checked {
+                    transform: scale(2);
+                }
+            }
+        }
+    }
+}
+
+
+
+.TernerosVenta {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: space-around;
+
+    ul {
+        display: flex;
+        margin: 5px;
+        padding: 5px;
+
+        li {
+
+            margin: 5px;
+            padding: 5px;
+
+            input {
+                transition: 1s;
+
+                &:focus {
+                    transform: scale(2);
+                }
+            }
+
+        }
+    }
+}
+
+.PieComun {
+    grid-area: pie;
+    background-color: $ColorVerde;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#Mapa {
+    text-align: left;
+
+
+
+    ul {
+        li {
+            a {
+                color: #000000;
+                font-size: 2rem;
+                display: inline-block;
+                padding: 10px;
+                margin: 10px;
+                transition: 3s;
+
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.985);
+                    border: $Verdoso 3px solid;
+                    color: $Verdoso;
+                    transform: scaleX(1.3);
+                }
+            }
+        }
+    }
+}
+
+.redessociales {
+    display: flex;
+    margin: 15px;
+    padding: 15px;
+    justify-content: right;
+
+    ul {
+        &:hover {
+            a {
+                filter: blur(2px);
+                border-radius: 6px;
+
+            }
+        }
+
+        li {
+            display: inline-block;
+            margin: 0 5px;
+            width: auto;
+            height: auto;
+            text-align: center;
+            align-items: center;
+            border-radius: 7px;
+
+            a {
+                display: block;
+                box-shadow: 0 3px 5px 0px #000000;
+                ;
+                transition: .2s;
+
+                &:hover {
+                    transform: translateY(-3px) scale(1.3);
+                    box-shadow: 0 5px 5px 0px rgb(0, 0, 0);
+                    filter: none;
+                    border-radius: 6px;
+
+                }
+
+
+            }
+
+            .facebook:hover {
+                background-color: #0c3283;
+                border-radius: 6px;
+            }
+
+            .instagram:hover {
+                background-color: #bd2635;
+                border-radius: 6px;
+            }
+
+            .whatsapp:hover {
+                background-color: #188b0b;
+                border-radius: 6px;
+            }
+
+            .youtube:hover {
+                background-color: #bb0808;
+                border-radius: 6px;
+            }
+
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width:820px) {
+
+    /*ipad air*/
+
+    .Contenedor {
+        height: 100%;
+    }
+
+    .Cabecera {
+        h1 {
+            font-size: 4rem;
+            padding: 2px;
+            margin: 5px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            padding: 2px;
+            margin: 5px;
+            color: $Verdoso;
+
+        }
+    }
+
+
+
+
+
+    .CuerpoIndex {
+        grid-area: cuerpo;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        margin: 0px;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+
+
+
+
+
+
+
+
+    .PieComun {
+        height: 100px;
+        grid-area: pie;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .CuerpoContacto {
+        grid-area: cuerpo;
+        height: 500px;
+        margin: 5px;
+        padding: 2px;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr;
+
+        h2 {
+            font-size: 2rem;
+
+        }
+
+    }
+
+    .CuerpoTerneros {
+        grid-area: cuerpo;
+        width: 90%;
+        height: 1000px;
+        margin: auto;
+        padding: 5px;
+        text-align: center;
+        display: grid;
+        justify-items: center;
+
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+
+
+    .CuerpoTernerosLista {
+        margin: 5px;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        div {
+            img {
+                margin: 5px;
+                padding: 2.5px;
+            }
+        }
+    }
+
+
+
+    .CuerpoTernerosTabla {
+        border: 1px solid black;
+        padding: 2.5px;
+        margin: 5px;
+        width: 80%;
+        height: 90%;
+        font-size: 1rem;
+
+    }
+
+    .CuerpoToros {
+        grid-area: cuerpo;
+        height: 1700px;
+        width: 800px;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 4fr 1fr 2fr;
+        justify-content: center;
+
+        h1 {
+            font-size: 2rem;
+            max-width: 800px;
+            display: inline-block;
+            margin: 5px;
+
+        }
+
+        h2 {
+            font-size: 1rem;
+        }
+    }
+
+    .CuerpoTorosLista {
+        margin: 1px;
+        padding: 0%;
+        max-width: 800px;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+
+        div {
+            margin: 0;
+            max-width: 800px;
+            justify-content: center;
+        }
+    }
+
+    .CuerpoPedidos {
+        height: 1400px;
+        max-width: 800px;
+    }
+
+    .TernerosVenta {
+        max-width: 800px;
+
+        ul {
+
+            display: flex;
+            margin: 1px;
+            padding: 1px;
+
+            li {
+                display: flex;
+                margin: 2px;
+                padding: 1px;
+            }
+        }
+    }
+
+
+
+
+
+
+
+}
+
+
+@media all and (max-width:390px) {
+
+    /*iphone 12pro*/
+
+
+    .Contenedor {
+        height: 100%;
+    }
+
+    .Cabecera {
+        h1 {
+            font-size: 2.5rem;
+            padding: 2px;
+            margin: 5px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            padding: 2px;
+            margin: 5px;
+            color: $Verdoso;
+
+        }
+    }
+
+
+
+
+
+    .CuerpoIndex {
+        grid-area: cuerpo;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        margin: 5px;
+        padding: 5px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        div {
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+            padding: 5px;
+
+            img {
+                max-width: 300px;
+            }
+        }
+    }
+
+
+
+
+    .PieComun {
+
+        grid-area: pie;
+        height: 150px;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto
+    }
+
+
+
+
+    .redessociales {
+        justify-content: start;
+        padding: 2px;
+        margin: 2px;
+
+        li {
+            a {
+                justify-content: start;
+                padding: 2px;
+                margin: 2px;
+            }
+        }
+    }
+
+    .redessociales li a {
+        justify-content: start;
+        padding: 2px;
+        margin: 2px;
+    }
+
+
+
+
+    .CuerpoContacto {
+        grid-area: cuerpo;
+        height: 550px;
+        margin: 5px;
+        padding: 2px;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr;
+
+        h2 {
+            font-size: 1rem;
+
+        }
+
+    }
+
+
+    .CuerpoTerneros {
+        grid-area: cuerpo;
+        width: 90%;
+        height: 1300px;
+        margin: auto;
+        padding: 5px;
+        text-align: center;
+        display: grid;
+        justify-items: center;
+
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .CuerpoTernerosLista {
+        margin: 5px;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        div {
+            img {
+                margin: 5px;
+                padding: 2.5px;
+            }
+        }
+    }
+
+
+
+    .CuerpoTernerosTabla {
+        border: 1px solid black;
+        padding: 2.5px;
+        margin: 5px;
+        width: 80%;
+        height: 90%;
+        font-size: 1rem;
+
+    }
+
+    .CuerpoToros {
+        grid-area: cuerpo;
+        height: 1600px;
+        max-width: 390px;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 4fr 1fr 3fr;
+
+        h1 {
+            font-size: 1.3rem;
+            padding: 0%;
+            margin: 0%;
+            max-width: 390px;
+        }
+
+        h2 {
+            font-size: 1rem;
+        }
+
+    }
+
+
+    .CuerpoTorosLista {
+        margin: 1px;
+        padding: 0%;
+        max-width: 390px;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+
+        div {
+            margin: 0;
+            width: 1fr;
+        }
+    }
+
+
+    .CuerpoPedidos {
+
+        grid-area: cuerpo;
+        margin: 5px;
+        padding: 3px;
+        height: 1100px;
+        max-width: 390px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: space-around;
+        align-content: stretch;
+        font-size: 1rem;
+
+        h2 {
+            font-size: 1rem;
+            display: inline-block;
+            margin: 2px;
+            padding: 2px;
+
+        }
+    }
+
+
+
+    .PrimerRenglon {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: center;
+
+    }
+
+
+    .SemillasCampeones {
+        margin: 2px;
+        padding: 2px;
+
+        ul {
+            margin: 2px;
+            padding: 2px;
+
+            li {
+                margin: 2px;
+                padding: 2px;
+
+                label {
+                    margin: 2px;
+                    padding: 2px;
+                }
+            }
+        }
+
+    }
+
+
+
+    .TorosVenta {
+        margin: 2px;
+        padding: 2px;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        ul {
+            margin: 2px;
+            padding: 2px;
+
+            li {
+                margin: 2px;
+                padding: 2px;
+            }
+        }
+
+    }
+
+
+
+
+
+    .TernerosVenta {
+        max-width: 390px;
+        display: grid;
+        grid-template-rows: auto auto auto;
+
+        ul {
+
+            display: grid;
+            margin: 1px;
+            padding: 1px;
+
+            li {
+
+                margin: 1px;
+                padding: 1px;
+            }
+        }
+
+    }
+}
