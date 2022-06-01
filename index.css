@@ -631,7 +631,7 @@ html {
   .CuerpoTerneros {
     grid-area: cuerpo;
     width: 90%;
-    height: 1300px;
+    height: 1700px;
     margin: auto;
     padding: 5px;
     text-align: center;
@@ -653,8 +653,9 @@ html {
   .CuerpoTernerosLista div img {
     margin: 5px;
     padding: 2.5px;
+    max-width: 300px;
   }
-  /* line 751, ../../../../nuevo/repositorio/scss/index.scss */
+  /* line 752, ../../../../nuevo/repositorio/scss/index.scss */
   .CuerpoTernerosTabla {
     border: 1px solid black;
     padding: 2.5px;
@@ -663,7 +664,7 @@ html {
     height: 90%;
     font-size: 1rem;
   }
-  /* line 761, ../../../../nuevo/repositorio/scss/index.scss */
+  /* line 762, ../../../../nuevo/repositorio/scss/index.scss */
   .CuerpoToros {
     grid-area: cuerpo;
     height: 1600px;
@@ -674,18 +675,18 @@ html {
     grid-template-columns: auto;
     grid-template-rows: 1fr 4fr 1fr 3fr;
   }
-  /* line 771, ../../../../nuevo/repositorio/scss/index.scss */
+  /* line 772, ../../../../nuevo/repositorio/scss/index.scss */
   .CuerpoToros h1 {
     font-size: 1.3rem;
     padding: 0%;
     margin: 0%;
     max-width: 390px;
   }
-  /* line 778, ../../../../nuevo/repositorio/scss/index.scss */
+  /* line 779, ../../../../nuevo/repositorio/scss/index.scss */
   .CuerpoToros h2 {
     font-size: 1rem;
   }
-  /* line 785, ../../../../nuevo/repositorio/scss/index.scss */
+  /* line 786, ../../../../nuevo/repositorio/scss/index.scss */
   .CuerpoTorosLista {
     margin: 1px;
     padding: 0%;
@@ -696,12 +697,12 @@ html {
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr 1fr 1fr;
   }
-  /* line 795, ../../../../nuevo/repositorio/scss/index.scss */
+  /* line 796, ../../../../nuevo/repositorio/scss/index.scss */
   .CuerpoTorosLista div {
     margin: 0;
     width: 1fr;
   }
-  /* line 802, ../../../../nuevo/repositorio/scss/index.scss */
+  /* line 803, ../../../../nuevo/repositorio/scss/index.scss */
   .CuerpoPedidos {
     grid-area: cuerpo;
     margin: 5px;
@@ -715,70 +716,70 @@ html {
     align-content: stretch;
     font-size: 1rem;
   }
-  /* line 816, ../../../../nuevo/repositorio/scss/index.scss */
+  /* line 817, ../../../../nuevo/repositorio/scss/index.scss */
   .CuerpoPedidos h2 {
     font-size: 1rem;
     display: inline-block;
     margin: 2px;
     padding: 2px;
   }
-  /* line 827, ../../../../nuevo/repositorio/scss/index.scss */
+  /* line 828, ../../../../nuevo/repositorio/scss/index.scss */
   .PrimerRenglon {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     text-align: center;
   }
-  /* line 836, ../../../../nuevo/repositorio/scss/index.scss */
+  /* line 837, ../../../../nuevo/repositorio/scss/index.scss */
   .SemillasCampeones {
     margin: 2px;
     padding: 2px;
   }
-  /* line 840, ../../../../nuevo/repositorio/scss/index.scss */
+  /* line 841, ../../../../nuevo/repositorio/scss/index.scss */
   .SemillasCampeones ul {
     margin: 2px;
     padding: 2px;
   }
-  /* line 844, ../../../../nuevo/repositorio/scss/index.scss */
+  /* line 845, ../../../../nuevo/repositorio/scss/index.scss */
   .SemillasCampeones ul li {
     margin: 2px;
     padding: 2px;
   }
-  /* line 848, ../../../../nuevo/repositorio/scss/index.scss */
+  /* line 849, ../../../../nuevo/repositorio/scss/index.scss */
   .SemillasCampeones ul li label {
     margin: 2px;
     padding: 2px;
   }
-  /* line 859, ../../../../nuevo/repositorio/scss/index.scss */
+  /* line 860, ../../../../nuevo/repositorio/scss/index.scss */
   .TorosVenta {
     margin: 2px;
     padding: 2px;
     display: grid;
     grid-template-columns: 1fr;
   }
-  /* line 865, ../../../../nuevo/repositorio/scss/index.scss */
+  /* line 866, ../../../../nuevo/repositorio/scss/index.scss */
   .TorosVenta ul {
     margin: 2px;
     padding: 2px;
   }
-  /* line 869, ../../../../nuevo/repositorio/scss/index.scss */
+  /* line 870, ../../../../nuevo/repositorio/scss/index.scss */
   .TorosVenta ul li {
     margin: 2px;
     padding: 2px;
   }
-  /* line 881, ../../../../nuevo/repositorio/scss/index.scss */
+  /* line 882, ../../../../nuevo/repositorio/scss/index.scss */
   .TernerosVenta {
     max-width: 390px;
     display: grid;
     grid-template-rows: auto auto auto;
   }
-  /* line 886, ../../../../nuevo/repositorio/scss/index.scss */
+  /* line 887, ../../../../nuevo/repositorio/scss/index.scss */
   .TernerosVenta ul {
     display: grid;
     margin: 1px;
     padding: 1px;
   }
-  /* line 892, ../../../../nuevo/repositorio/scss/index.scss */
+  /* line 893, ../../../../nuevo/repositorio/scss/index.scss */
   .TernerosVenta ul li {
     margin: 1px;
     padding: 1px;
