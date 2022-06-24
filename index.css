@@ -23,7 +23,7 @@ html {
 /* line 30, ../../../../nuevo/repositorio/scss/index.scss */
 .Cabecera {
   grid-area: cabecera;
-  background-image: url(../repositorio/imagenes/fondo.jpeg);
+  background-image: url(imagenes/fondo.jpeg);
   background-size: cover;
   height: 450px;
   padding: 30px;
